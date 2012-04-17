@@ -1,0 +1,178 @@
+.portfolio-introduction-container {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	background-image: url(images/portfolio/background.jpg); background-position: center top;
+}
+.portfolio-introduction {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 400px;
+	width: 900px;
+}
+
+.portfolio-introduction img {
+	position: absolute;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 900ms;
+	left: 0px;
+	top:  40px;
+	width: 350px;
+	opacity: 0;
+}
+
+.portfolio-introduction h1 {
+	position: absolute;
+	top: 80px;
+	left: 380px;
+	width: 500px;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+}
+
+.portfolio-introduction h2 {
+	position: absolute;
+	top: 170px;
+	left: 400px;
+	width: 550px;
+	line-height: 28px;
+	font-weight: normal;
+	font-style: normal;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+}
+
+#portfolio-container {
+/*background-image: url(images/portfolio/background.jpg); background-repeat:  no-repeat; background-position: center top; */
+}
+.portfolio {
+	position:  relative;
+	width: 100%;
+	height: 3000px;
+	padding-top: 0px;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+}
+
+.portfolio .app-summary-container {
+	position: relative;
+	height: 400px;
+	width: 100%;
+/*	background-image: url(images/portfolio/summary_background.jpg); background-repeat:  no-repeat; background-position: center top;*/
+}
+
+.portfolio img{
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, transparent), to(rgba(255,255,255,0.2)));
+}
+
+.portfolio .app-summary {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 400px;
+	width: 953px;
+}
+
+.portfolio .odd img.ipad-only {
+	position: absolute;
+	left: 35px;
+	top: 45px;
+}
+
+.portfolio .even img.ipad-only {
+	position: absolute;
+	right: 30px;
+	top: 45px;
+}
+
+.portfolio .odd img.iphone-portrait-only {
+	position: absolute;
+	left: 40px;
+	top: 30px;
+}
+
+.portfolio .even img.iphone-portrait-only {
+	position: absolute;
+	right: 40px;
+	top: 10px;
+}
+
+.portfolio .odd img.iphone-portrait {
+	position: absolute;
+	left: 0px;
+	top: 115px;
+	height: 250px;
+}
+
+.portfolio .even img.iphone-horizontal {
+	position: absolute;
+	right: -40px;
+	top: 190px;
+}
+
+.portfolio .even img.iphone-portrait {
+	position: absolute;
+	right: -10px;
+	top: 110px;
+	height: 250px;
+}
+
+.portfolio .app-separator-top {
+	width: 100%;
+	height: 50px;
+	background-image: -moz-linear-gradient(top, #fafbfd, #F0F0F0);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fafbfd),color-stop(1, #fafafa));
+	/*background-image: -moz-linear-gradient(top, #e8f2f4, #fafafa);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e8f2f4),color-stop(1, #fafafa));*/
+}
+
+.portfolio .app-separator {
+	width: 100%;
+	height: 50px;
+	background-image: -moz-linear-gradient(top, #FEFEFE, #F0F0F0);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fefefe),color-stop(1, #fafafa));
+	/*background-image: -moz-linear-gradient(top, #e8f2f4, #fafafa);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #e8f2f4),color-stop(1, #fafafa));*/
+}
+
+.portfolio .app-summary {
+	margin-top: -40px;
+}
+
+.portfolio .app-summary .info p.description {
+	margin-top:  10px;
+	margin-bottom: 30px;
+}
+
+.portfolio .app-summary .info p.fact {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.portfolio .odd .info {
+	position: absolute;
+	left: 470px;
+	top: 0px;
+	width: 500px;
+	height: 100%;
+}
+
+.portfolio .odd .info img.store-link{
+	margin-top: 30px;
+	-webkit-box-reflect: none;
+}
+
+.portfolio .even .info img.store-link{
+	margin-top: 30px;
+	margin-rigth: 0px;
+	-webkit-box-reflect: none;
+}
+
+.portfolio .even .info {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 500px;
+	height: 100%;
+}
+

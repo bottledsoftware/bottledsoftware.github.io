@@ -1,0 +1,123 @@
+.services-introduction-container {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	background-image: url(images/portfolio/background.jpg); background-position: center top;
+}
+.services-introduction {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 400px;
+	width: 820px;
+}
+
+.services-introduction img {
+	position: absolute;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 900ms;
+	left: -20px;
+	top: 20px;
+	opacity: 0;
+}
+
+.services-introduction h1 {
+	position: absolute;
+	top: 80px;
+	left: 350px;
+	width: 500px;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+}
+
+.services-introduction h2 {
+	position: absolute;
+	top: 200px;
+	left: 390px;
+	width: 500px;
+	line-height: 28px;
+	font-weight: normal;
+	font-style: normal;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+}
+
+
+.services-details-container {
+	position: relative;
+	min-height: 600px;
+	width: 100%;
+/*	background-image: url(images/portfolio/background.jpg); background-repeat:  no-repeat; background-position: center top;*/
+	padding-top: 50px;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	overflow: hidden;
+	opacity: 0;
+}
+
+
+.service-details {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 106px;
+	width: 953px;
+	box-shadow: 0px 0px 6px #A9ACB1;
+	border-radius: 6px;
+	background-image: -moz-linear-gradient(top, #FEFEFE, #F0F0F0);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fefefe),color-stop(1, #f0f0f0));
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	overflow: hidden;
+	margin-top: 1px;
+	/*box-shadow: inset 0px 0px 10px 2px rgba(0, 0, 0, 1);
+	border-radius: 25px;
+	margin-top: 20px;*/
+/*	background-image: url(images/portfolio/summary_background.jpg); background-repeat:  no-repeat; background-position: center top;*/
+}
+
+.service-head {
+	height: 106px;
+	cursor: pointer;
+}
+
+.service-details img.service-icon {
+	height: 100px;
+	width: 100px;
+	margin-top: 3px;
+	margin-left: 3px;
+}
+
+.service-details h1 {
+	position:  absolute;
+	left: 120px;
+	top: 10px;
+	height: 100px;
+	width: 600px;
+}
+
+.service-details h2 {
+	position:  absolute;
+	left: 120px;
+	top: 40px;
+	height: 100px;
+	width: 800px;
+	font-weight: normal;
+	font-style: normal;
+}
+
+.service-details p {
+	margin-top: 10px;
+/*	height: 100%;*/
+	overflow: hidden;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.service-details h3 {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.service-detailed-description {
+	height: 100%;
+	width: 100%;
+	transition-property: all; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+}

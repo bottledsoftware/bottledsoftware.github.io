@@ -1,0 +1,139 @@
+.about-founder-container {
+	position: relative;
+	height: 400px;
+	width: 100%;
+	background-image: url(images/portfolio/background.jpg); background-position: center top;
+}
+
+.about-founder {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 400px;
+	width: 820px;
+}
+
+.about-founder img {
+	position: absolute;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 900ms;
+	left: 0px;
+	top: 30px;
+	opacity: 0;
+	width:  330px;
+}
+
+.about-founder h1 {
+	position: absolute;
+	top: 80px;
+	left: 350px;
+	width: 500px;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+}
+
+.about-founder h2 {
+	position: absolute;
+	top: 170px;
+	left: 390px;
+	width: 500px;
+	line-height: 28px;
+	font-weight: normal;
+	font-style: normal;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+}
+
+.about-founder p {
+	position: absolute;
+	top: 135px;
+	left: 350px;
+	width: 500px;
+	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+	opacity: 0;
+	font-size: 18px;
+    line-height: 22px;
+}
+
+.person-introduction-container {
+    transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
+    opacity: 0;
+}
+
+.about-person-container {
+	position: relative;
+	height: 325px;
+	width: 100%;
+	background-image: -moz-linear-gradient(top, #FEFEFE, #F0F0F0);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fefefe),color-stop(1, #f0f0f0));
+/*	background-image: url(images/portfolio/background.jpg); background-repeat:  no-repeat; background-position: center top;*/
+}
+.even {
+	background-image: -moz-linear-gradient(top, #f6f6f6, #F0F0F0);
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #f6f6f6),color-stop(1, #f0f0f0));
+}
+
+.about-person {
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	height: 100%;
+	width: 900px;
+}
+
+.odd img {
+	position: absolute;
+	right: 0px;
+	top: 30px;
+	opacity: 1;
+	width:  330px;
+}
+
+.odd p {
+	position: absolute;
+	left: 0px;
+	top: 60px;
+	opacity: 1;
+	width:  450px;
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.odd h2 {
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	width: 500px;
+	line-height: 28px;
+	font-weight: bold;
+	opacity: 1;
+}
+
+.even img {
+	position: absolute;
+	left: 0px;
+	top: 30px;
+	opacity: 1;
+	width:  330px;
+}
+
+.even p {
+	position: absolute;
+	left: 400px;
+	top: 90px;
+	opacity: 1;
+	width:  450px;
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.even h2 {
+	position: absolute;
+	top: 50px;
+	left: 400px;
+	width: 500px;
+	line-height: 28px;
+	font-weight: bold;
+	opacity: 1;
+}
