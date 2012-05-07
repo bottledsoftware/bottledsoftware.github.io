@@ -159,6 +159,7 @@ body {background-color: #fafafa; }
 .top {width: 980px;  height: 78px; margin-left: auto; margin-right: auto; }
 
 .logo {width: 105px; float: left; height: 100%;}
+.logo img {margin-top: 11px;}
 
 .empty {width: 175px; float: left; height: 100%;}
 
