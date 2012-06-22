@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=utf-8');
 if(isset($_POST['email'])) {
      
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "kevin@bottledsoftware.de";
+    $email_to = "info@bottledsoftware.de";
     $email_subject = "Neue Kontaktanfrage über Kontaktformular";
      
      
