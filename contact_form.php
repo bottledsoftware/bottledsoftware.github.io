@@ -48,7 +48,7 @@ if(isset($_POST['email'])) {
   }
   if(strlen($error_message) > 0) {
     //died($error_message);
-    echo '<div class="alert alert-error"><strong>Fehler.</strong> ' + $error_message +'.</div>';
+    echo '<div class="alert alert-error"><strong>Fehler.</strong> ' . $error_message . '.</div>';
   }
     $email_message = "Form details below.\n\n";
      
