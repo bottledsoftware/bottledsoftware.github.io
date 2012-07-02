@@ -48,9 +48,11 @@ function sendContactForm() {
 		"contact_form.php",
 		$('#contactForm').serialize(),
 		function(data) { 
+		$('.alert').remove();
 	  	$('.form-actions').before(data); 
 	  	}
-	).error(function(data) { 
+	).error(function(data) {
+		$('.alert').remove(); 
 		$('.form-actions').before('<div class="alert alert-error"><strong>Fehler.</strong> Bei der Übermittlung Ihrer Daten ist ein Fehler aufgetreten. Sollte dieser Fehler weiterhin bestehen schicken Sie uns bitte eine E-Mail an info@bottledsoftware.de.</div>'); 
 	});
 	
