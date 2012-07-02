@@ -34,17 +34,21 @@ if(isset($_POST['email'])) {
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
   if(!preg_match($email_exp,$email_from)) {
-    $error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    //$error_message .= 'The Email Address you entered does not appear to be valid.<br />';
+    $error_message .= 'Die von Ihnen eingegebene E-Mail Adresse ist keine gültige Adresse.<br />';
   }
     $string_exp = "/^[A-Za-z .'-]+$/";
   if(!preg_match($string_exp,$name)) {
-    $error_message .= 'The name you entered does not appear to be valid.<br />';
+    //$error_message .= 'The name you entered does not appear to be valid.<br />';
+    $error_message .= 'Der von Ihnen eingegebene Name ist kein gültiger Name.<br />';
   }
   if(strlen($comments) < 2) {
-    $error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    //$error_message .= 'The Comments you entered do not appear to be valid.<br />';
+    $error_message .= 'Bitte füllen Sie das Nachrichtenfeld korrekt aus.<br />';
   }
   if(strlen($error_message) > 0) {
-    died($error_message);
+    //died($error_message);
+    echo '<div class="alert alert-error"><strong>Fehler.</strong> ' + $error_message +'.</div>';
   }
     $email_message = "Form details below.\n\n";
      
@@ -69,7 +73,9 @@ $headers = 'From: '.$email_from."\r\n".
  
 <!-- include your own success html here -->
  
-Vielen Dank für Ihre Anfrage. Wir werden uns so schnell wie möglich bei Ihnen melden.
+<div class="alert alert-success">
+	<strong>Vielen Dank für Ihre Anfrage.</strong> Wir werden uns schnellstmöglich mit Ihnen in Verbindung setzen.
+</div>
  
 <?php
 }
