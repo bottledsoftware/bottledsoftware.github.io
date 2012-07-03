@@ -50,7 +50,12 @@ $(document).ready(function() {
 function expandServiceDescription(service) {
 	if (service == 'app_development') {
 		if (!$app_dev_expanded) {
-			$('#service-description-app-dev').css('height', '1880px');
+			if ($.browser.mozilla) {
+				$('#service-description-app-dev').css('height', '1920px');
+			}
+			else {
+				$('#service-description-app-dev').css('height', '1880px');	
+			}
 		}
 		else {
 			$('#service-description-app-dev').css('height', '106px');
