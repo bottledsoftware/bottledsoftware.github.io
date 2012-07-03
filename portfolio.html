@@ -3,6 +3,7 @@
 <head>
     <title>Bottled Software GmbH - Unsere iOS Referenzprojekte für iPhone und iPad</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="jquery.fancybox.css?v=2.0.5" type="text/css" media="screen">
     <link href="base.css" rel="stylesheet">
@@ -17,6 +18,28 @@
     <script type="text/javascript" src="bs_website.js"></script> 
     <script type="text/javascript" src="device_browser.js"></script> 
     <script src="ga.js"></script>
+    <script type="text/javascript">
+(function(doc) {
+
+	var addEvent = 'addEventListener',
+	    type = 'gesturestart',
+	    qsa = 'querySelectorAll',
+	    scales = [1, 1],
+	    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+	function fix() {
+		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+		doc.removeEventListener(type, fix, true);
+	}
+
+	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+		fix();
+		scales = [.25, 1.6];
+		doc[addEvent](type, fix, true);
+	}
+
+}(document));
+</script>
 </head>
 <body>
 	    <div class="header">

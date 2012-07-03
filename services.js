@@ -50,7 +50,7 @@ $(document).ready(function() {
 function expandServiceDescription(service) {
 	if (service == 'app_development') {
 		if (!$app_dev_expanded) {
-			$('#service-description-app-dev').css('height', '1200px');
+			$('#service-description-app-dev').css('height', '1880px');
 		}
 		else {
 			$('#service-description-app-dev').css('height', '106px');
@@ -59,7 +59,7 @@ function expandServiceDescription(service) {
 	}
 	else if (service == 'corporate') {
 		if (!$corporate_expanded) {
-			$('#service-description-corporate').css('height', '350px');
+			$('#service-description-corporate').css('height', '510px');
 		}
 		else {
 			$('#service-description-corporate').css('height', '106px');
@@ -68,7 +68,7 @@ function expandServiceDescription(service) {
 	}
 	else if (service == 'consulting') {
 		if (!$consulting_expanded) {
-			$('#service-description-consulting').css('height', '250px');
+			$('#service-description-consulting').css('height', '310px');
 		}
 		else {
 			$('#service-description-consulting').css('height', '106px');
