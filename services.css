@@ -9,7 +9,9 @@
 	margin-right: auto;
 	position: relative;
 	height: 400px;
-	width: 820px;
+	width: 100%;
+	max-width: 820 px;
+	min-width: 768px;
 }
 
 .services-introduction img {

@@ -19,7 +19,8 @@ var $content = {};
 $(document).ready(function() {
 
 		// Settings for eSense Project.
-		$content['esense'] = {};
+		/*
+$content['esense'] = {};
 		$content['esense']['imagePath'] = 'images/portfolio/deviceBrowser/esense/';
 		$content['esense']['defaultView'] = 'iPadHorizontal';
 		$content['esense']['supported'] = {};
@@ -32,6 +33,7 @@ $(document).ready(function() {
 		$content['esense']['screenshotCount']['iPadPortrait'] = 3;
 		$content['esense']['screenshotCount']['iPhoneHorizontal'] = 3;
 		$content['esense']['screenshotCount']['iPhonePortrait'] = 3;
+*/
 		
 		
 		
@@ -51,7 +53,8 @@ $(document).ready(function() {
 			$transitionEnd = "oTransitionEnd";
 		}
 		
-	 	
+	 	/*
+
          if($vP != '-ms-') {
            $('.portfolio').css({'transform': 'scale(0,0)', 'opacity' : '1'});
          }
@@ -71,15 +74,18 @@ $(document).ready(function() {
 		$iPadPortraitLoaded = false;
 		$iPhoneHorizontalLoaded = false;
 		$iPhonePortraitLoaded = false;
+*/
 		
 		
-		$('.fancybox').fancybox({openEffect : 'elastic',
+		/*
+$('.fancybox').fancybox({openEffect : 'elastic',
 								openSpeed  : 250,
 								closeBtn : true});
 //		$('#nav-left').click(function() { goToSlide($currentScreenshot-1); });
 		$('#nav-right').click(function() { goToSlide($currentScreenshot+1); });
 		
 		$('#esenseBrowser').click(function() { initDeviceBrowser('esense'); });
+*/
 		
 		$('#portfolio-intro-hero').css('transform', 'translate3d(-1000px, 0px, 0px)');
 		$('#portfolio-intro-title').css('transform', 'translate3d(1000px, 0px, 0px)');
