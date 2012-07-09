@@ -2,13 +2,14 @@
 	position: relative;
 	height: 400px;
 	width: 100%;
+	min-width: 980px;
 	background-image: url(images/portfolio/background.jpg); background-position: center top;
 }
 
 .contact-form-container {
 	position: absolute;
 	left: 0px;
-	width: ;
+	width: 100%;
 }
 
 .contact-introduction {
@@ -55,7 +56,7 @@
 
 .contact-info-container {
 	position:  relative;
-	width: 100%;
+	width: 820px;
 	height: 1000px;
 	padding-top: 10px;
 	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;

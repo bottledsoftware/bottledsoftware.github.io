@@ -2,6 +2,7 @@
 	position: relative;
 	height: 400px;
 	width: 100%;
+	min-width: 980px;
 	background-image: url(images/portfolio/background.jpg); background-position: center top;
 }
 .services-introduction {
@@ -9,9 +10,7 @@
 	margin-right: auto;
 	position: relative;
 	height: 400px;
-	width: 100%;
-	max-width: 820px;
-	min-width: 768px;
+	width: 820px;
 }
 
 .services-introduction img {
@@ -48,6 +47,7 @@
 	position: relative;
 	min-height: 600px;
 	width: 100%;
+	min-width: 980px;
 /*	background-image: url(images/portfolio/background.jpg); background-repeat:  no-repeat; background-position: center top;*/
 	padding-top: 50px;
 	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;

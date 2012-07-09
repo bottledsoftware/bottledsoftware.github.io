@@ -2,6 +2,7 @@
 	position: relative;
 	height: 400px;
 	width: 100%;
+	min-width: 980px;
 	background-image: url(images/portfolio/background.jpg); background-position: center top;
 }
 .portfolio-introduction {
@@ -9,9 +10,7 @@
 	margin-right: auto;
 	position: relative;
 	height: 400px;
-	width: 100%;
-	max-width: 900px;
-	min-width: 768px;
+	width: 900px;
 }
 
 .portfolio-introduction img {
@@ -50,6 +49,7 @@
 .portfolio {
 	position:  relative;
 	width: 100%;
+	min-width: 980px;
 	height: 3000px;
 	padding-top: 0px;
 	transition-property: none; transition-delay: 100ms; transition-timing-function: cubic-bezier(0.25,0,0.25,1); transition-duration: 1000ms;
