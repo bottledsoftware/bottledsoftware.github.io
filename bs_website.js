@@ -97,14 +97,18 @@ $(document).ready(function() {
  }
  
  function initSlides() {
+ 	//alert('init slides called');
  	$.each($slides, function (i) {
+ 		//alert('setting positions for slide ' + i);
  		var children = $(this).children('*'); 
+ 		//alert('children: ' + children.toString());
  		$(this).children('*').each(function () {
  			if($vP == "-ms-") {
  				$(this).css('transition-property', 'none');
  				$(this).css('transition-duration', '0ms');
  				
  			}
+ 			
  			if($(this).css('left') != "auto") {
  				var currentPosition = parseInt(cleanValue($(this).css('left')));
  				var newPosition = currentPosition + i*$slide_width;
@@ -305,8 +309,11 @@ $(document).ready(function() {
  	if($vP == '-ms-') {
  		$('#ui-wireframe').stop().animate({left: '-=150px'}, 1000);
  		$('#ui-finished').stop().animate({left: '+=150px'}, 1000);
- 		$("#ui-wireframe").rotate({duration:1000, angle: 0, animateTo:-2});
- 		$("#ui-finished").rotate({duration:1000, angle: 0, animateTo:2});
+ 		if (parseInt($.browser.version, 10) === 9) {
+ 			$("#ui-wireframe").rotate({duration:1000, angle: 0, animateTo:-2});
+ 			$("#ui-finished").rotate({duration:1000, angle: 0, animateTo:2});
+		} 
+ 		
  	}
  	else {
  		var translateWireframe = $currentlyAppliedXTransformation - 150;
@@ -328,8 +335,10 @@ $(document).ready(function() {
  	if($vP == '-ms-') {
  		$('#ui-wireframe').css('left','+=150px');
  		$('#ui-finished').css('left' ,'-=150px');
- 		$("#ui-wireframe").rotate(0);
- 		$("#ui-finished").rotate(0);
+ 		if (parseInt($.browser.version, 10) === 9) {
+ 			$("#ui-wireframe").rotate(0);
+ 			$("#ui-finished").rotate(0);
+ 		}
  		
  	}
  }
@@ -339,8 +348,10 @@ $(document).ready(function() {
  	// Move wireframe to the left and finished user interface to the right.
  	
  	if($vP == '-ms-') {
- 		$("#architecture-icon-back").rotate({duration:1000, angle: 0, animateTo:5});
- 		$("#architecture-icon-front").rotate({duration:1000, angle: 0, animateTo:-5});
+ 		if(parseInt($.browser.version, 10) === 9) {
+	 		$("#architecture-icon-back").rotate({duration:1000, angle: 0, animateTo:5});
+	 		$("#architecture-icon-front").rotate({duration:1000, angle: 0, animateTo:-5});	
+ 		}
  		
  	}
  	else {
@@ -350,7 +361,7 @@ $(document).ready(function() {
  }
  
  function resetArchitectureSlideAnimation() {
- 	if($vP == '-ms-') {
+ 	if($vP == '-ms-' && parseInt($.browser.version, 10) === 9) {
  		$("#architecture-icon-back").rotate(0);
  		$("#architecture-icon-front").rotate(0);
  		
