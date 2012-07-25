@@ -3,7 +3,7 @@
 	height: 320px;
 	width: 100%;
 	min-width: 980px;
-	background-image: url(images/portfolio/background.jpg); background-position: center top;
+	background-image: url(background.jpg); background-position: center top;
 }
 
 .contact-form-container {
