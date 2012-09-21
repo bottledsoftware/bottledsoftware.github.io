@@ -94,7 +94,6 @@
 	right: 0px;
 	top: 30px;
 	opacity: 1;
-	width:  330px;
 }
 
 .odd p {
@@ -109,7 +108,7 @@
     line-height: 1.5;
 }
 
-.odd h2 {
+.odd p.title {
 	position: absolute;
 	top: 10px;
 	left: 0px;
@@ -119,12 +118,23 @@
 	opacity: 1;
 }
 
+.odd h2 {
+	font-weight: bold;
+	display: inline;
+}
+
+.odd h3 {
+	color: gray;
+	font-weight: normal;
+	margin-left: 10px;
+	display: inline;
+}
+
 .even img {
 	position: absolute;
 	left: 0px;
 	top: 30px;
 	opacity: 1;
-	width:  330px;
 }
 
 .even p {
@@ -139,12 +149,28 @@
     line-height: 1.5;
 }
 
-.even h2 {
+.title {
 	position: absolute;
 	top: 30px;
 	left: 400px;
-	width: 500px;
 	line-height: 28px;
 	font-weight: bold;
 	opacity: 1;
+}
+
+.even h2 {
+	top: 30px;
+	left: 400px;
+	line-height: 28px;
+	font-weight: bold;
+	
+	display: inline; 
+}
+
+.even h3 {
+	line-height: 28px;
+	margin-left: 10px;
+	color: gray;
+	font-weight: normal;
+ 	display: inline; 
 }
