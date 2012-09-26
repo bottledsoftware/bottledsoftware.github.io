@@ -61,6 +61,7 @@
 	height: 400px;
 	width: 100%;
 /*	background-image: url(images/portfolio/summary_background.jpg); background-repeat:  no-repeat; background-position: center top;*/
+	background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #fafafa),color-stop(1, #fefefe));
 }
 
 .portfolio img{
