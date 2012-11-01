@@ -91,6 +91,16 @@ $('.fancybox').fancybox({openEffect : 'elastic',
 		$('#portfolio-intro-title').css('transform', 'translate3d(1000px, 0px, 0px)');
 		$('#portfolio-intro-subtitle').css('transform', 'translate3d(1000px, 0px, 0px)');
 		
+		if ($vP != '-ms-' || ($vP == '-ms-' && (parseInt($.browser.version, 10) > 8 ))) {
+		
+			$('.store-link').each(function (index, element) {
+				var oldLink = $(this).attr("src");
+				var newLink = oldLink.replace("png", "svg");
+				$(this).attr("src", newLink);
+			});
+			
+		}
+		
 		setTimeout("animatePortfolioIntro()",600);
 		
 //		$('#iPadHorizontalButton').click(function() { setDeviceBrowserMode("iPadHorizontal"); });
