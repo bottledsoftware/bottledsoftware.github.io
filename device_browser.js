@@ -93,7 +93,7 @@ $('.fancybox').fancybox({openEffect : 'elastic',
 		
 		if ($vP != '-ms-' || ($vP == '-ms-' && (parseInt($.browser.version, 10) > 8 ))) {
 		
-			$('.store-link-apple').each(function (index, element) {
+			$('.store-link').each(function (index, element) {
 				var oldLink = $(this).attr("src");
 				var newLink = oldLink.replace("png", "svg");
 				$(this).attr("src", newLink);
