@@ -1,0 +1,14 @@
+{
+  "verifyURL" : "http://www.bottledsoftware.de/emquiz/verifyPurchase.php",
+  "verifyURLRemoved" : "https://sandbox.itunes.apple.com/verifyReceipt",
+  "productionVerifyURL" : "https://buy.itunes.apple.com/verifyReceipt",
+  "productIdentifiers" : [
+    "de.bottledsoftware.emquiz.category.eurohistory",
+    "de.bottledsoftware.emquiz.category.worldcup",
+    "de.bottledsoftware.emquiz.category.footballrules",
+    "de.bottledsoftware.emquiz.category.zz_all",
+    "de.bottledsoftware.emquiz.soccerballs.1000",
+    "de.bottledsoftware.emquiz.soccerballs.3000",
+    "de.bottledsoftware.emquiz.soccerballs.10000"
+  ]
+}
