@@ -44,7 +44,7 @@ $(document).ready(function() {
    $('#go-to-step-button-5').click(function() { goToSlide(5); });
    $('#go-to-step-button-6').click(function() { goToSlide(6); });
    $('#contact-button').click(function () {
-      window.location = "contact.html";
+      window.location = "contact/";
     });
     
     //Swipe support for multi-touch devices.
