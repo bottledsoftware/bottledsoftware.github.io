@@ -1,0 +1,12 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Bottled Software Website",
+  "main": "index.js",
+  "author": "Martin Czuchra <martin.czuchra@googlemail.com>",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "gatsby-cli": "^3.5.0"
+  }
+}
