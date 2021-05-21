@@ -31,6 +31,10 @@
 .btn {
     border-radius: 300px;
     @include alt-font;
+
+    & ~ .btn {
+        margin-left: 18px;
+    }
 }
 
 .btn-xl {

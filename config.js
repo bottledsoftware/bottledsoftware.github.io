@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter New age', // <title>
+  siteTitle: 'Bottled Software', // <title>
   manifestName: 'newage',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
@@ -13,22 +13,17 @@ module.exports = {
     {
       icon: 'fa-github',
       name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
+      url: 'https://github.com/bottledsoftware',
     },
     {
       icon: 'fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/theanubhav/',
+      url: 'https://de.linkedin.com/company/bottled-software-gmbh',
     },
     {
       icon: 'fa-twitter',
       name: 'Twitter',
-      url: 'https://twitter.com/onlyanubhav',
-    },
-    {
-      icon: 'fa-facebook-f',
-      name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://twitter.com/f_reinhart',
     },
   ],
 };

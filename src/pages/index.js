@@ -20,12 +20,13 @@ const IndexPage = () => (
           <div className="col-lg-7 my-auto">
             <div className="header-content mx-auto">
               <h1 className="mb-5">
-                New Age is an gatsby starter for app landing page that will help
-                you beautifully showcase your new mobile app, or anything else!
+                Als Experten der mobilen Softwareentwicklung
+                Aunterstützen wir Sie in allen Belangen Ihrer
+                App-Entwicklungsprojekte
               </h1>
-              <Scroll type="id" element="download">
-                <a href="#download" className="btn btn-outline btn-xl">
-                  Start Now for Free!
+              <Scroll type="id" element="contact">
+                <a href="#contact" className="btn btn-outline btn-xl">
+                  Kontakt
                 </a>
               </Scroll>
             </div>
@@ -51,17 +52,16 @@ const IndexPage = () => (
         <div className="row">
           <div className="col-md-8 mx-auto">
             <h2 className="section-heading">
-              Discover what all the buzz is about!
+              In den Stores
             </h2>
             <p>
-              Our app is available on any mobile device! Download now to get
-              started!
+              Besuchen Sie uns im App Store oder auf Google Play. Unsere App 1-2-3 Tanken ist auf allen gängigen Geräten verfügbar, kostenlos zum Download!
             </p>
             <div className="badges">
-              <a className="badge-link" href="/#">
+              <a className="badge-link" href="https://play.google.com/store/apps/developer?id=Bottled+Software+GmbH">
                 <img src={gplay} alt="" />
               </a>
-              <a className="badge-link" href="/#">
+              <a className="badge-link" href="https://apps.apple.com/de/developer/bottled-software-gmbh/id530238613">
                 <img src={astore} alt="" />
               </a>
             </div>
@@ -148,15 +148,17 @@ const IndexPage = () => (
       <div className="cta-content">
         <div className="container">
           <h2>
-            Stop waiting.
+            Kontaktieren Sie uns noch heute
             <br />
-            Start building.
+            Wir beraten unverbindlich
           </h2>
-          <Scroll type="id" element="contact">
-            <a href="#contact" className="btn btn-outline btn-xl">
-              Let's Get Started!
-            </a>
-          </Scroll>
+          <a href="mailto:info@bottledsoftware.de" className="btn btn-outline btn-xl">
+            E-Mail
+          </a>
+          <a href="tel:+4970218669268" className="btn btn-outline btn-xl">
+            Telefon
+          </a>
+
         </div>
       </div>
       <div className="overlay"></div>
@@ -165,9 +167,7 @@ const IndexPage = () => (
     <section className="contact bg-primary" id="contact">
       <div className="container">
         <h2>
-          We
-          <i className="fas fa-heart"></i>
-          new friends!
+          Inspirierender Spruch?
         </h2>
         <Social />
       </div>

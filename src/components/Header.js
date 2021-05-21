@@ -69,7 +69,7 @@ export default class Header extends Component {
                   element="download"
                 >
                   <a className="nav-link" href="#download">
-                    Download
+                    Stores
                   </a>
                 </Scroll>
               </li>
