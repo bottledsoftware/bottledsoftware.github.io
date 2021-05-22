@@ -6,7 +6,9 @@ import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
 import Social from '../components/Social';
 
-import demo1 from '../assets/images/demo-screen-1.jpg';
+import logo from '../assets/images/bottled-software.svg';
+import demoPreisalarm from '../assets/images/demo-preisalarm.png';
+import demoDetails from '../assets/images/demo-details.png';
 import gplay from '../assets/images/google-play-badge.svg';
 import astore from '../assets/images/app-store-badge.svg';
 
@@ -14,14 +16,15 @@ const IndexPage = () => (
   <Layout>
     <Header />
 
-    <header className="masthead">
+    <header className="masthead" id="page-top">
       <div className="container h-100">
         <div className="row h-100">
           <div className="col-lg-7 my-auto">
             <div className="header-content mx-auto">
+              <img src={logo} className="logo" alt="" />
               <h1 className="mb-5">
                 Als Experten der mobilen Softwareentwicklung
-                Aunterstützen wir Sie in allen Belangen Ihrer
+                unterstützen wir Sie in allen Belangen Ihrer
                 App-Entwicklungsprojekte
               </h1>
               <Scroll type="id" element="contact">
@@ -32,16 +35,10 @@ const IndexPage = () => (
             </div>
           </div>
           <div className="col-lg-5 my-auto">
-            <div className="device-container">
-              <div className="device-mockup iphone6_plus portrait white">
-                <div className="device">
-                  <div className="screen">
-                    <img src={demo1} className="img-fluid" alt="" />
-                  </div>
-                  <div className="button"></div>
-                </div>
-              </div>
+            <div className="image-container">
+              <img src={demoDetails} className="img-fluid" alt="" />
             </div>
+            <div className="button"></div>
           </div>
         </div>
       </div>
@@ -73,24 +70,53 @@ const IndexPage = () => (
     <section className="features" id="features">
       <div className="container">
         <div className="section-heading text-center">
-          <h2>Unlimited Features, Unlimited Fun</h2>
+          <h2>
+            Sie haben eine Idee für eine mobile Applikation?
+          </h2>
           <p className="text-muted">
-            Check out what you can do with this app theme!
+            Sie haben eine Idee für eine mobile Applikation? Wir
+            helfen Ihnen dabei diese Idee unter Einsatz der aktuellsten
+            Technologien umzusetzen. Mit unserer Hilfe erhalten Sie in
+            kurzer Zeit eine ausgereifte App zu einem fairen Preis.
+            Kontaktieren Sie uns einfach und wir erstellen Ihnen gerne
+            ein unverbindliches Angebot zu Ihrer App-Idee.
+          </p>
+          <hr />
+        </div>
+        <div className="section-heading text-center">
+          <h2>
+            Sie möchten für Ihr Unternehmen eine App entwickeln?
+          </h2>
+          <p className="text-muted">
+            Sie wollen eine App betriebsintern bereitstellen, um Ihre
+            Prozesse zu optimieren oder zu unterstützen? Wir helfen
+            Ihnen dabei zu identifizieren wie Sie am besten durch
+            mobile Applikationen profitieren können. Anschließend
+            entwickeln wir Ihre Applikation spezifisch zu Ihren
+            Geschäftsanforderungen und integrieren die Applikation
+            bestmöglich mit Ihren bestehenden IT-Systemen.
+          </p>
+          <hr />
+        </div>
+        <div className="section-heading text-center">
+          <h2>
+            Sie entwickeln selbst Software?
+          </h2>
+          <p className="text-muted">
+            Fehlt Ihnen Erfahrung mit der Entwicklung von mobiler
+            Software? Wir unterstützen Sie bei der Entwicklung Ihrer
+            App, egal ob beim Oberflächen-Design, der Implementierung
+            oder bei der Veröffentlichung. Kontaktieren Sie uns einfach
+            und wir diskutieren gemeinsam wie wir Ihnen helfen können.
           </p>
           <hr />
         </div>
         <div className="row">
           <div className="col-lg-4 my-auto">
-            <div className="device-container">
-              <div className="device-mockup iphone6_plus portrait white">
-                <div className="device">
-                  <div className="screen">
-                    <img src={demo1} className="img-fluid" alt="" />
-                  </div>
-                  <div className="button"></div>
-                </div>
-              </div>
+            <div className="image-container">
+              <img src={demoPreisalarm} className="img-fluid" alt="" />
             </div>
+            <div className="button"></div>
           </div>
           <div className="col-lg-8 my-auto">
             <div className="container-fluid">
@@ -98,20 +124,18 @@ const IndexPage = () => (
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-screen-smartphone text-primary"></i>
-                    <h3>Device Mockups</h3>
+                    <h3>Alle Geräte</h3>
                     <p className="text-muted">
-                      Ready to use HTML/CSS device mockups, no Photoshop
-                      required!
+                      Wir bieten Erfahrung mit allen modernen Apple und Android Geräten
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-camera text-primary"></i>
-                    <h3>Flexible Use</h3>
+                    <h3>App Entwicklung</h3>
                     <p className="text-muted">
-                      Put an image, video, animation, or anything else in the
-                      screen!
+                      Wir entwickeln Ihre App professionell, schnell und kostengünstig
                     </p>
                   </div>
                 </div>
@@ -120,20 +144,18 @@ const IndexPage = () => (
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-present text-primary"></i>
-                    <h3>Free to Use</h3>
+                    <h3>Unternehmensberatung</h3>
                     <p className="text-muted">
-                      As always, this theme is free to download and use for any
-                      purpose!
+                      Wir verbessern Ihre Prozesse durch den Einsatz mobiler Technologien
                     </p>
                   </div>
                 </div>
                 <div className="col-lg-6">
                   <div className="feature-item">
                     <i className="icon-lock-open text-primary"></i>
-                    <h3>Open Source</h3>
+                    <h3>Entwicklungsberatung</h3>
                     <p className="text-muted">
-                      Since this theme is MIT licensed, you can use it
-                      commercially!
+                      Wir unterstützen Sie bei der Eigenentwicklung von mobilen Apps
                     </p>
                   </div>
                 </div>
@@ -144,7 +166,7 @@ const IndexPage = () => (
       </div>
     </section>
 
-    <section className="cta">
+    <section className="cta" id="contact">
       <div className="cta-content">
         <div className="container">
           <h2>
@@ -164,7 +186,7 @@ const IndexPage = () => (
       <div className="overlay"></div>
     </section>
 
-    <section className="contact bg-primary" id="contact">
+    <section className="contact bg-primary" id="social">
       <div className="container">
         <h2>
           Inspirierender Spruch?
