@@ -23,7 +23,6 @@ class Scroll extends React.Component {
     smoothscroll.polyfill();
   }
   handleClick(e) {
-    e.preventDefault();
     const { onClick = () => {} } = this.props;
     let elem = 0;
     let scroll = true;
@@ -41,9 +40,12 @@ class Scroll extends React.Component {
         default:
       }
     }
-    scroll
-      ? this.scrollTo(elem, offset, timeout)
-      : console.log(`Element not found: ${element}`); // eslint-disable-line
+    if (scroll) {
+      e.preventDefault();
+      this.scrollTo(elem, offset, timeout);
+    } else {
+      console.log(`Element not found: ${element}`); // eslint-disable-line
+    }
 
     onClick(e);
   }

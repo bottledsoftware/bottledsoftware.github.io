@@ -103,7 +103,7 @@ export default class Header extends Component {
                   type="id"
                   element="footer"
                 >
-                  <a className="nav-link" href="#contact">
+                  <a className="nav-link" href="#footer">
                     Impressum
                   </a>
                 </Scroll>

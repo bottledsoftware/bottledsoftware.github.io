@@ -2,47 +2,18 @@ import React from 'react';
 
 import Layout from '../components/Layout';
 import Header from '../components/Header';
-import Scroll from '../components/Scroll';
 import Footer from '../components/Footer';
 import Social from '../components/Social';
+import MastHead from '../components/MastHead';
 
-import logo from '../assets/images/bottled-software.svg';
 import demoPreisalarm from '../assets/images/demo-preisalarm.png';
-import demoDetails from '../assets/images/demo-details.png';
 import gplay from '../assets/images/google-play-badge.svg';
 import astore from '../assets/images/app-store-badge.svg';
 
 const IndexPage = () => (
   <Layout>
-    <Header />
-
-    <header className="masthead" id="page-top">
-      <div className="container h-100">
-        <div className="row h-100">
-          <div className="col-lg-7 my-auto">
-            <div className="header-content mx-auto">
-              <img src={logo} className="logo" alt="" />
-              <h1 className="mb-5">
-                Als Experten der mobilen Softwareentwicklung
-                unterstützen wir Sie in allen Belangen Ihrer
-                App-Entwicklungsprojekte
-              </h1>
-              <Scroll type="id" element="contact">
-                <a href="#contact" className="btn btn-outline btn-xl">
-                  Kontakt
-                </a>
-              </Scroll>
-            </div>
-          </div>
-          <div className="col-lg-5 my-auto">
-            <div className="image-container">
-              <img src={demoDetails} className="img-fluid" alt="" />
-            </div>
-            <div className="button"></div>
-          </div>
-        </div>
-      </div>
-    </header>
+    <Header/>
+    <MastHead/>
 
     <section className="download bg-primary text-center" id="download">
       <div className="container">
@@ -56,10 +27,10 @@ const IndexPage = () => (
             </p>
             <div className="badges">
               <a className="badge-link" href="https://play.google.com/store/apps/developer?id=Bottled+Software+GmbH">
-                <img src={gplay} alt="" />
+                <img src={gplay} alt=""/>
               </a>
               <a className="badge-link" href="https://apps.apple.com/de/developer/bottled-software-gmbh/id530238613">
-                <img src={astore} alt="" />
+                <img src={astore} alt=""/>
               </a>
             </div>
           </div>
@@ -81,7 +52,7 @@ const IndexPage = () => (
             Kontaktieren Sie uns einfach und wir erstellen Ihnen gerne
             ein unverbindliches Angebot zu Ihrer App-Idee.
           </p>
-          <hr />
+          <hr/>
         </div>
         <div className="section-heading text-center">
           <h2>
@@ -96,7 +67,7 @@ const IndexPage = () => (
             Geschäftsanforderungen und integrieren die Applikation
             bestmöglich mit Ihren bestehenden IT-Systemen.
           </p>
-          <hr />
+          <hr/>
         </div>
         <div className="section-heading text-center">
           <h2>
@@ -109,12 +80,12 @@ const IndexPage = () => (
             oder bei der Veröffentlichung. Kontaktieren Sie uns einfach
             und wir diskutieren gemeinsam wie wir Ihnen helfen können.
           </p>
-          <hr />
+          <hr/>
         </div>
         <div className="row">
           <div className="col-lg-4 my-auto">
             <div className="image-container">
-              <img src={demoPreisalarm} className="img-fluid" alt="" />
+              <img src={demoPreisalarm} className="img-fluid" alt=""/>
             </div>
             <div className="button"></div>
           </div>
@@ -186,16 +157,7 @@ const IndexPage = () => (
       <div className="overlay"></div>
     </section>
 
-    <section className="contact bg-primary" id="social">
-      <div className="container">
-        <h2>
-          Inspirierender Spruch?
-        </h2>
-        <Social />
-      </div>
-    </section>
-
-    <Footer />
+    <Footer/>
   </Layout>
 );
 
