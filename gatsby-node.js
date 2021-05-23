@@ -14,3 +14,12 @@ exports.onCreateWebpackConfig = ({ actions, stage }) => {
     })
   }
 };
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createRedirect } = actions;
+  createRedirect({ fromPath: '/services', toPath: '/', isPermanent: true });
+  createRedirect({ fromPath: '/portfolio', toPath: '/', isPermanent: true });
+  createRedirect({ fromPath: '/about', toPath: '/', isPermanent: true });
+  createRedirect({ fromPath: '/contact', toPath: '/', isPermanent: true });
+  createRedirect({ fromPath: '/imprint', toPath: '/', isPermanent: true });
+}
