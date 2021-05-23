@@ -1,13 +1,12 @@
 module.exports = {
   siteTitle: 'Bottled Software', // <title>
-  manifestName: 'newage',
+  manifestName: 'bottled-software',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/images/bottle.svg',
-  pathPrefix: `/gatsby-starter-newage/`, // This path is subpath of your hosting https://domain/portfolio
   // social
   socialLinks: [
     {
