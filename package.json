@@ -9,7 +9,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "npm run clean && gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public -b main",
     "serve": "gatsby serve",
     "clean": "rimraf .cache public",
     "format": "prettier --write '**/*.js'",
@@ -30,9 +30,9 @@
     "smoothscroll-polyfill": "^0.4.4"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
+    "gatsby-cli": "^3.5.0",
+    "gh-pages": "^3.1.0",
     "prettier": "^1.17.0",
-    "rimraf": "^3.0.2",
-    "gatsby-cli": "^3.5.0"
+    "rimraf": "^3.0.2"
   }
 }
