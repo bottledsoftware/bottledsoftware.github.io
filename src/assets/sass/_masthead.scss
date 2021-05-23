@@ -33,6 +33,10 @@ header.masthead {
       border-radius: 3px;
     }
   }
+  .btn {
+    @include button-variant(white, $theme-primary, $theme-primary)
+
+  }
   @media (min-width: 992px) {
     height: 100vh;
     min-height: 775px;

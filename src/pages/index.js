@@ -141,9 +141,8 @@ const IndexPage = () => (
       <div className="cta-content">
         <div className="container">
           <h2>
-            Kontaktieren Sie uns noch heute
-            <br />
-            Wir beraten unverbindlich
+            Kontaktieren Sie uns noch heute,<br/>
+            wir beraten unverbindlich
           </h2>
           <a href="mailto:info@bottledsoftware.de" className="btn btn-outline btn-xl">
             E-Mail

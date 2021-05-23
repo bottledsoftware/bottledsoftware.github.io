@@ -9,7 +9,7 @@ export default function Footer() {
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-8 order-md-1 order-sm-2">
+          <div class="col-md-8 order-2 order-md-1">
             <ul className="list-inline">
               <li className="list-inline-item heading">
                 <strong>Haftungsausschluss</strong> (Quelle: <a href="http://www.e-recht24.de">http://www.e-recht24.de</a>)
@@ -38,7 +38,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div class="col-md-4 order-md-2 order-sm-1">
+          <div class="col-md-4 order-1 order-md-2">
             <ul className="list-inline">
               <li className="list-item heading">
                 <strong>Impressum</strong>

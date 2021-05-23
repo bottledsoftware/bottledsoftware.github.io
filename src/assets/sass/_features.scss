@@ -18,16 +18,17 @@ section.features {
         color: rgb(51, 51, 51);
         font-size: 30px;
     }
-    .device-container,
+    .image-container {
+      text-align: center;
+      @media (max-width: 991px) {
+        img {
+          max-width: 300px;
+        }
+      }
+    }
     .feature-item {
         max-width: 325px;
         margin: 0 auto;
-    }
-    .device-container {
-        margin-bottom: 100px;
-        @media(min-width: 992px) {
-            margin-bottom: 0;
-        }
     }
     .feature-item {
         padding-top: 50px;
@@ -42,9 +43,5 @@ section.features {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-    }
-    .footnote {
-        color: rgb(51, 51, 51);
-        font-size: 12px;
     }
 }
